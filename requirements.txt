@@ -1,0 +1,12 @@
+autopep8
+
+pyqt5 
+pyqt5-tools
+
+numpy
+pandas
+scipy
+
+matplotlib
+
+auto-py-to-exe
