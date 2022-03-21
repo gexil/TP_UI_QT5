@@ -15,6 +15,9 @@ import numpy as np
 import pandas as pd
 from scipy.optimize import curve_fit
 
+#Chemin de l'icone de l'application
+ICON_FILENAME = "interfaces/ressources/llbOrphee.png"
+
 # GraphicWindow est notre classe de gestion de la fenêtre d'affichage graphique
 class GraphicWindow(QMainWindow):
     
@@ -36,7 +39,7 @@ class GraphicWindow(QMainWindow):
         self.setWindowTitle("Mon graphique")
 
         # On définit une icône
-        self.setWindowIcon(QtGui.QIcon('images/llbOrphee.png'))
+        self.setWindowIcon(QtGui.QIcon(ICON_FILENAME))
 
         # Notre widget bar d'outils de la bibliothèque MatplotLib
         self.addToolBar(NavigationToolbar(self.MplWidget.canvas, self))
@@ -99,7 +102,7 @@ class AboutDialog(QDialog):
         self.setWindowTitle("About")
 
         # On définit une icône
-        self.setWindowIcon(QtGui.QIcon('images/llbOrphee.png'))
+        self.setWindowIcon(QtGui.QIcon(ICON_FILENAME))
 
         # On active le mode modal pour cette boite de dialogue
         # ce qui signifie qu'il faudra la fermer pour pouvoir interagir de nouveau avec l'application
@@ -139,7 +142,7 @@ class MainWindow(QMainWindow):
         self.setWindowTitle("Mon application")
 
         # On définit une icône
-        self.setWindowIcon(QtGui.QIcon('images/llbOrphee.png'))
+        self.setWindowIcon(QtGui.QIcon(ICON_FILENAME))
         
         # Les fonctions du menu
         # Menu Open 
